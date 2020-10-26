@@ -12,8 +12,6 @@ C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\bin\Debug\netcoreapp
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.csprojAssemblyReference.cache
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.AssemblyInfoInputs.cache
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.AssemblyInfo.cs
-C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.csproj.CoreCompileInputs.cache
-C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.RazorAssemblyInfo.cache
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.RazorAssemblyInfo.cs
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.TagHelpers.input.cache
@@ -35,3 +33,5 @@ C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.pdb
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.genruntimeconfig.cache
 C:\Users\PC\source\repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.csproj.CopyComplete
+C:\Users\PC\Source\Repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\eShopSolution\eShopSolution.WebApp\obj\Debug\netcoreapp3.1\eShopSolution.WebApp.MvcApplicationPartsAssemblyInfo.cache
