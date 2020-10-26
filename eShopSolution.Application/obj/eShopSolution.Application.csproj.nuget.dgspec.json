@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {}
+    "C:\\Users\\PC\\Source\\Repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+    "C:\\Users\\PC\\Source\\Repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Source\\Repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
         "projectName": "eShopSolution.Application",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
+        "projectPath": "C:\\Users\\PC\\Source\\Repos\\eShopSolution\\eShopSolution.Application\\eShopSolution.Application.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Application\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Source\\Repos\\eShopSolution\\eShopSolution.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
