@@ -6011,19 +6011,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
       "projectName": "eShopSolution.Data",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\eShopSolution\\eShopSolution.Data\\obj\\",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Data\\eShopSolution.Data.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
