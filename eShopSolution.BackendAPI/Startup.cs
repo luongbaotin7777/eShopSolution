@@ -26,6 +26,7 @@ namespace eShopSolution.BackendAPI
             options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
             //DI
             services.AddTransient<IPublicProductService, PublicProductService>();
+            services.AddTransient<IManageProductService, ManageProductService>();
             services.AddControllersWithViews();
             services.AddSwaggerGen();
         }

@@ -13,7 +13,7 @@ namespace eShopSolution.ViewModel.Catalog.Products
         public int ViewCount { set; get; }
         public DateTime DateCreated { set; get; }
 
-        //public int ProductId { set; get; }
+        public int ProductId { set; get; }
         public string Name { set; get; }
         public string Description { set; get; }
         public string Details { set; get; }
