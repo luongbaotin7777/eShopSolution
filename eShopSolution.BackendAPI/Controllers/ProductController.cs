@@ -32,23 +32,16 @@ namespace eShopSolution.BackendAPI.Controllers
             var products = await _publicProductService.GetAllByCategoryId(request);
             return Ok(products);
         }
-        [HttpGet("{id}")]
-        //api/Product/2
-        public async Task<IActionResult> GetById(int id,string languageId)
+        [HttpGet("{id}/{languageId}")]
+        //api/Product/2/vi-VN
+        public async Task<IActionResult> GetById(int id, string languageId)
         {
             var products = await _manageProductService.GetById(id, languageId);
-            try
-            {
-               
+           
                 if (products == null)
                 {
                     return BadRequest("Cannot find product");
                 }
-               
-            }catch(NullReferenceException e)
-            {
-                Console.WriteLine(e.Message);
-            }
             return Ok(products);
 
         }
@@ -56,11 +49,12 @@ namespace eShopSolution.BackendAPI.Controllers
         public async Task<IActionResult> Create([FromForm]ProductCreateRequest request)
         {
             var producId = await _manageProductService.Create(request);
-            if(producId == 0)
+            if(producId == null)
             {
-                return BadRequest();
+                return BadRequest("Cannot find product");
             }
             var product = await _manageProductService.GetById(producId,request.LanguageId);
+           
             return Created(nameof(GetById), product);
         }
         [HttpPut]

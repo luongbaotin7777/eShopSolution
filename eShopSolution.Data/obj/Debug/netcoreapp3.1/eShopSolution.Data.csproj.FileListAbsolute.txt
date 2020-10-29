@@ -22,3 +22,6 @@ C:\Users\Asus\source\repos\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp
 C:\Users\Asus\source\repos\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Data.pdb
 C:\Users\Asus\source\repos\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.genruntimeconfig.cache
 C:\Users\Asus\source\repos\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Ultilities.dll
+C:\Users\PC\source\repos\eShopSolution\eShopSolution.Data\bin\Debug\netcoreapp3.1\eShopSolution.Ultilities.pdb
+C:\Users\PC\source\repos\eShopSolution\eShopSolution.Data\obj\Debug\netcoreapp3.1\eShopSolution.Data.csproj.CopyComplete

@@ -88,7 +88,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Ultilities\\eShopSolution.Ultilities.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Ultilities\\eShopSolution.Ultilities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

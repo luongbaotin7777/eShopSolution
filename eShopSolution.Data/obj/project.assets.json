@@ -1617,6 +1617,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "eShopSolution.Ultilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/eShopSolution.Ultilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eShopSolution.Ultilities.dll": {}
+        }
       }
     }
   },
@@ -5998,6 +6008,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "eShopSolution.Ultilities/1.0.0": {
+      "type": "project",
+      "path": "../eShopSolution.Ultilities/eShopSolution.Ultilities.csproj",
+      "msbuildProject": "../eShopSolution.Ultilities/eShopSolution.Ultilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6007,7 +6022,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.9",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.9",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.1.9",
-      "Microsoft.Extensions.Configuration.Json >= 3.1.9"
+      "Microsoft.Extensions.Configuration.Json >= 3.1.9",
+      "eShopSolution.Ultilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6035,7 +6051,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Ultilities\\eShopSolution.Ultilities.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\eShopSolution\\eShopSolution.Ultilities\\eShopSolution.Ultilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

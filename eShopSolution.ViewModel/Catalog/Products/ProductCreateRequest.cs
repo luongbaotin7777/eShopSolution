@@ -14,6 +14,6 @@
 
         public string SeoAlias { get; set; }
         public string LanguageId { set; get; }
-
+       
     }
 }

@@ -11,6 +11,9 @@ namespace eShopSolution.Data.Extensions
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Example>().HasData(
+                new Example { Id = 1, Name ="Examples"}
+                );
             modelBuilder.Entity<AppConfig>().HasData(
                 new AppConfig { Key = "HomeTitle", Value = "This is Home Page of eShopSolution" },
                 new AppConfig { Key = "HomeKeyword", Value = "This is Key Word of eShopSolution" },

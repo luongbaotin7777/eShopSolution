@@ -4,6 +4,7 @@ using eShopSolution.Data.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -44,7 +45,7 @@ namespace eShopSolution.Data.EF
 
             modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims");
             modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
-
+            modelBuilder.ApplyConfiguration(new ExampleConfiguration());
             //Data seeding
             modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
@@ -74,7 +75,7 @@ namespace eShopSolution.Data.EF
 
 
         public DbSet<Transaction> Transactions { get; set; }
-
+        //public DbSet<Example> Examples { get; set; }
 
 
     }

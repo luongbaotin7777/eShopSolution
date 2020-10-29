@@ -15,7 +15,7 @@ namespace eShopSolution.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.1")
+                .HasAnnotation("ProductVersion", "3.1.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -138,17 +138,17 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Key = "HomeTitle",
-                            Value = "This is home page of eShopSolution"
+                            Value = "This is Home Page of eShopSolution"
                         },
                         new
                         {
                             Key = "HomeKeyword",
-                            Value = "This is keyword of eShopSolution"
+                            Value = "This is Key Word of eShopSolution"
                         },
                         new
                         {
                             Key = "HomeDescription",
-                            Value = "This is description of eShopSolution"
+                            Value = "This is Description of eShopSolution"
                         });
                 });
 
@@ -180,7 +180,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "fba117d7-06b5-4c61-abcd-43a1ef7e0aa2",
+                            ConcurrencyStamp = "c16367fe-fefd-4ac6-8050-3c059e501619",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -257,7 +257,7 @@ namespace eShopSolution.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1298a9e3-fdba-4dd9-83d3-7b123eddded2",
+                            ConcurrencyStamp = "3f8d8dbc-f990-4141-b24b-f44bcdfe1d42",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "tedu.international@gmail.com",
                             EmailConfirmed = true,
@@ -266,7 +266,7 @@ namespace eShopSolution.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "tedu.international@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEL/CRFH2Ilm6CVYJ6ygyWugYf/JQcpwALzBZxtAkMLvMuwCStioi7RKrHKTwlyHVuQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOGmcCCQ/t27fV3Ph6qrcraWuu7ls1w093/47vvBoTBu5XYuh7pvJRiXwzdl47vxsg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -401,7 +401,7 @@ namespace eShopSolution.Data.Migrations
                             Id = 1,
                             CategoryId = 1,
                             LanguageId = "vi-VN",
-                            Name = "Áo nam",
+                            Name = "Áo Nam",
                             SeoAlias = "ao-nam",
                             SeoDescription = "Sản phẩm áo thời trang nam",
                             SeoTitle = "Sản phẩm áo thời trang nam"
@@ -413,18 +413,18 @@ namespace eShopSolution.Data.Migrations
                             LanguageId = "en-US",
                             Name = "Men Shirt",
                             SeoAlias = "men-shirt",
-                            SeoDescription = "The shirt products for men",
-                            SeoTitle = "The shirt products for men"
+                            SeoDescription = "The Shirt products for men",
+                            SeoTitle = "The Shirt products for men"
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 2,
                             LanguageId = "vi-VN",
-                            Name = "Áo nữ",
-                            SeoAlias = "ao-nu",
+                            Name = "Áo Nữ",
+                            SeoAlias = "ao-nam",
                             SeoDescription = "Sản phẩm áo thời trang nữ",
-                            SeoTitle = "Sản phẩm áo thời trang women"
+                            SeoTitle = "Sản phẩm áo thời trang nữ"
                         },
                         new
                         {
@@ -432,9 +432,9 @@ namespace eShopSolution.Data.Migrations
                             CategoryId = 2,
                             LanguageId = "en-US",
                             Name = "Women Shirt",
-                            SeoAlias = "women-shirt",
-                            SeoDescription = "The shirt products for women",
-                            SeoTitle = "The shirt products for women"
+                            SeoAlias = "Women-shirt",
+                            SeoDescription = "The Shirt products for Women",
+                            SeoTitle = "The Shirt products for Women"
                         });
                 });
 
@@ -472,6 +472,29 @@ namespace eShopSolution.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("eShopSolution.Data.Entities.Example", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Examples");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Examples"
+                        });
                 });
 
             modelBuilder.Entity("eShopSolution.Data.Entities.Language", b =>
@@ -520,7 +543,7 @@ namespace eShopSolution.Data.Migrations
                     b.Property<DateTime>("OrderDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2020, 1, 31, 14, 17, 23, 45, DateTimeKind.Local).AddTicks(9455));
+                        .HasDefaultValue(new DateTime(2020, 10, 29, 15, 54, 39, 579, DateTimeKind.Local).AddTicks(4256));
 
                     b.Property<string>("ShipAddress")
                         .IsRequired()
@@ -613,9 +636,18 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2020, 1, 31, 14, 17, 23, 67, DateTimeKind.Local).AddTicks(3650),
+                            DateCreated = new DateTime(2020, 10, 29, 15, 54, 39, 594, DateTimeKind.Local).AddTicks(9728),
                             OriginalPrice = 100000m,
                             Price = 200000m,
+                            Stock = 0,
+                            ViewCount = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DateCreated = new DateTime(2020, 10, 29, 15, 54, 39, 595, DateTimeKind.Local).AddTicks(1534),
+                            OriginalPrice = 200000m,
+                            Price = 400000m,
                             Stock = 0,
                             ViewCount = 0
                         });
@@ -640,6 +672,11 @@ namespace eShopSolution.Data.Migrations
                         {
                             CategoryId = 1,
                             ProductId = 1
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            ProductId = 2
                         });
                 });
 
@@ -708,14 +745,38 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 2,
-                            Description = "Viet Tien Men T-Shirt",
-                            Details = "Viet Tien Men T-Shirt",
-                            LanguageId = "en-US",
-                            Name = "Viet Tien Men T-Shirt",
+                            Description = "Viet Tien Men T-Shirt Color: White",
+                            Details = "Viet Tien Men T-Shirt Color: White",
+                            LanguageId = "vi-VN",
+                            Name = "Viet Tien Men T-Shirt Color: White",
                             ProductId = 1,
-                            SeoAlias = "viet-tien-men-t-shirt",
-                            SeoDescription = "Viet Tien Men T-Shirt",
-                            SeoTitle = "Viet Tien Men T-Shirt"
+                            SeoAlias = "viet-tien-men-t-shirt-color-white",
+                            SeoDescription = "Viet Tien Men T-Shirt Color: White",
+                            SeoTitle = "Viet Tien Men T-Shirt Color: White"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Áo sơ mi nữ hồng Gucci",
+                            Details = "Áo sơ mi nữ hồng Gucci",
+                            LanguageId = "vi-VN",
+                            Name = "Áo sơ mi nữ hồng Gucci",
+                            ProductId = 2,
+                            SeoAlias = "ao-so-mi-nu-hong-gucci",
+                            SeoDescription = "Áo sơ mi nữ hồng Gucci",
+                            SeoTitle = "Áo sơ mi nữ hồng Gucci"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Gucci Women T-Shirt Color: Pink",
+                            Details = "Gucci Women T-Shirt Color: Pink",
+                            LanguageId = "vi-VN",
+                            Name = "Gucci Women T-Shirt Color: Pink",
+                            ProductId = 2,
+                            SeoAlias = "gucci-women-t-shirt-color-pink",
+                            SeoDescription = "Gucci Women T-Shirt Color: Pink",
+                            SeoTitle = "Gucci Women T-Shirt Color: Pink"
                         });
                 });
 

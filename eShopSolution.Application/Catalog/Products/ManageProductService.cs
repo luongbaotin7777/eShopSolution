@@ -47,11 +47,13 @@ namespace eShopSolution.Application.Catalog.Products
                         SeoDescription = request.SeoDescription,
                         SeoAlias = request.SeoAlias,
                         SeoTitle = request.SeoTitle,
-                        LanguageId = request.LanguageId
-
+                        LanguageId = request.LanguageId,
+                       
                     }
+                    
                 }
             };
+            
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
             return product.Id;
@@ -116,12 +118,13 @@ namespace eShopSolution.Application.Catalog.Products
             var product = await _context.Products.FindAsync(productId);
             var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId && x.LanguageId == languageId);
             if (product == null) throw new EshopException($"Cannot find a product with id: {productId}");
+            if (productTranslation == null) throw new EshopException($"Cannot find a product with language id: {languageId}, please sure Enter languageId: vi-VN or en-US, if you Enter right languageId, mean Product don't have Your Language");
             var productViewModel = new ProductViewModel()
             {
                 Id = product.Id,
                 DateCreated = product.DateCreated,
                 Description = productTranslation != null ? productTranslation.Description : null,
-                LanguageId = productTranslation.LanguageId,
+                LanguageId = productTranslation != null ? productTranslation.LanguageId : "Invalid LanguageId, Please chose: vi-VN or en-US",
                 Details = productTranslation != null ? productTranslation.Details : null,
                 Name = productTranslation != null ? productTranslation.Name : null,
                 OriginalPrice = product.OriginalPrice,
@@ -130,8 +133,10 @@ namespace eShopSolution.Application.Catalog.Products
                 SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
                 SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
                 Stock = product.Stock,
-                ViewCount = product.ViewCount
+                ViewCount = product.ViewCount,
+                
             };
+           
             return productViewModel;
         }
 
@@ -139,7 +144,8 @@ namespace eShopSolution.Application.Catalog.Products
         {
             var product = await _context.Products.FindAsync(request.Id);
             var productTranslations = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == request.Id && x.LanguageId == request.LanguageId);
-            if (product == null || productTranslations == null) throw new EshopException($"Cannot find a product with id: {request.Id}");
+            if (product == null ) throw new EshopException($"Cannot find a product with id: {request.Id}");
+            if (productTranslations == null) throw new EshopException($"Please Enter LanguageId: vi-VN or en-Us");
             productTranslations.Name = request.Name;
             productTranslations.SeoAlias = request.SeoAlias;
             productTranslations.SeoDescription = request.SeoDescription;
